@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--CSS Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Danielle Dacanay | Book'd App</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <a href="index.html"><img src="assets/images/dd_logo.png" alt="logo" width="125" height="100"></a>
+    <ul class="navigation">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="work.html" class="nav-link">Work</a></li>
+      <li><a href="contact-me.html" target="_blank" class="nav-link">Contact</a></li>
+    </ul>
+    <!--Burger menu will be hidden on desktop but shown on mobile-->
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+  </nav>
+
+  <!--Banner-->
+  <section class="banner" id="banner">
+    <img src="assets/images/Book'd.png" alt="banner-image" loading="lazy" />
+  </section>
+  <!--Intro-->
+  <section class="intro" id="intro">
+    <h1>The Product</h1>
+    <p>Book’d is an appointment calendar app that helps restaurants and other businesses in the food industry manage
+      dining reservations. Many restaurants still rely on handwritten appointment books to manage reservations. This can
+      be overwhelming and at times unreliable. </p>
+  </section>
+  <hr class="rounded">
+
+  <!--Project Overview-->
+  <section class="overview" id="overview">
+    <img src="assets/images/bookd_thumbnail.png" alt="bookd-graphic" loading="lazy" class="overview-img" />
+    <div class="overview-summary">
+      <h1>Project Overview</h1>
+      <p>
+        <strong>Challenge: </strong>Design an app that streamlines reservation management tasks and allows users to
+        easily add, update and find reservations.
+      </p>
+      <p>
+        <strong>Role(s): </strong>UX Researcher, UI Designer
+      </p>
+      <p>
+        <strong>Responsibilities: </strong>Conduct interviews and usability studies, create wireframes and prototypes,
+        test for accessibility and iterate on designs
+      </p>
+      <p>
+        <strong>Duration: </strong> November 2021 - January 2022 (8 weeks)
+      </p>
+      <p>
+        <strong>Tools: </strong> Figma
+      </p>
+      <a href="https://www.figma.com/proto/AAQ02CXF4IE1f6XFC64Eny/Restaurant-Reservation-App?node-id=118%3A14&scaling=scale-down&page-id=118%3A2&starting-point-node-id=118%3A14"
+        target="_blank" class="secondary-button">View prototype</a>
+    </div>
+  </section>
+  <hr class="rounded">
+
+  <!--User Research-->
+  <section class="intro" id="intro">
+    <h1>User Research</h1>
+    <p>In order to better understand the users and their needs, I conducted interviews and created empathy maps. A
+      primary user group identified during the research was busy restaurant hosts who had more than one role on the
+      staff. This user group confirmed some initial assumptions about restaurant hosts, but further research revealed
+      that time constraints were only part of the causes for finding difficulty with bookkeeping. Other challenges
+      included inconsistency and legibility.</p>
+  </section>
+  <section class="detailed-content">
+    <h2>Pain Points</h2>
+    <ul>
+      <li>
+        <strong>Time </strong>&#8212; Employees often have multiple to perform roles, such as setting tables and answering phone calls, while guests
+        wait at the entrance for their table.
+      </li>
+      <li>
+        <strong>Inconsistency </strong>&#8212; The amount of information that is noted down for a reservation varies from employee to employee
+      </li>
+      <li>
+        <strong>Legibility </strong>&#8212; Some employees have a difficult time reading the handwriting of others, which makes it challenging to find
+        reservations quickly
+      </li>
+    </ul>
+  </section>
+
+  <!--Personas-->
+  <section class="detailed-content">
+    <h2>Personas</h2>
+    <img src="assets/images/bookd_personas.png"/>
+  </section>
+
+  <!--User Journey Map-->
+  <section class="detailed-content">
+    <img src="assets/images/bookd_journey.png"
+      style="margin-bottom: 1rem; align-items: center;" />
+    <p>Mapping Jade’s user journey highlighted pain points in the current process and revealed opportunities to
+      alleviate the current challenges</p>
+  </section>
+  <hr class="rounded">
+  <!--Design Process-->
+  <section class="intro" id="intro">
+    <h1>Design Process</h1>
+    <p>In order to better understand the users and their needs, I conducted interviews and created empathy maps. A
+      primary user group identified during the research was busy restaurant hosts who had more than one role on the
+      staff. This user group confirmed some initial assumptions about restaurant hosts, but further research revealed
+      that time constraints were only part of the causes for finding difficulty with bookkeeping. Other challenges
+      included inconsistency and legibility.</p>
+  </section>
+  <div class="gallery">
+    <div class="column">
+      <img src="assets/images/bookd_wireframe1.png" class="gallery-img">
+    </div>
+    <div class="column" style="margin-top: 1rem;">
+      <h2>Paper Wireframes</h2>
+      <p>When iterating on the home screen, I prioritized ease of access and minimalistic design to allow for easy
+        navigation. When choosing the elements to include in the refined version, I opted for elements that were easy to
+        understand and gave quick access to the most-used features.</p>
+    </div>
+  </div>
+  <div class="gallery">
+    <div class="column">
+      <img src="assets/images/bookd_wireframe2.png" class="gallery-img">
+    </div>
+    <div class="column" style="margin-top: 1rem;">
+      <h2>Digital Wireframes & Low-fidelity Protoype</h2>
+      <p>Designs included in the digital wireframes prioritized minimalistic elements that allowed users to take common
+        actions quickly and easily. The low-fidelity prototype created in Figma from the digital wireframes focused on
+        the Add Reservation user flow, which is the core feature of the app.</p>
+    </div>
+  </div>
+
+  <hr class="rounded">
+
+
+  <!--Usability Findings-->
+  <section class="intro" id="intro">
+    <h1>Usability Findings</h1>
+    <p>Two rounds of usability studies were conducted – one moderated and one unmoderated. Findings from the first study
+      helped uncover major pain points with the initial design. The second study used a high-fidelity prototype and
+      revealed what elements still needed refinement.</p>
+  </section>
+  <div class="gallery">
+    <div class="column">
+      <h2>Round 1 Findings</h2>
+      <li>Users wanted to filter information</li>
+      <li>Users wanted a less cluttered calendar design</li>
+      <li>Users wanted an edit option</li>
+    </div>
+    <div class="column">
+      <h2>Round 2 Findings</h2>
+      <li>Users were confused by the “Guest Book” label</li>
+      <li>Users wanted a way to know which guests had arrived or had been seated</li>
+    </div>
+  </div>
+  <hr class="rounded">
+  <!--Refining the Design-->
+  <section class="intro" id="intro">
+    <h1>Refining the design</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </section>
+  <div class="gallery">
+    <div class="column">
+      <img src="assets/images/bookd_mockup1.png" class="gallery-img">
+    </div>
+    <div class="column" style="margin-top: 1rem;">
+      <h2>Clutter-free</h2>
+      <p>Usability studies revealed that users found it troublesome to scroll horizontally and vertically to see the
+        rest of the reservations placed for the same time slot. I revised the design so that only <strong>vertical
+          scrolling</strong> was only necessary to see future reservations. I also added a <strong>filter</strong>
+        option for users who found the calendar overwhelming.</p>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <div class="column">
+      <img src="assets/images/bookd_mockup2.png" class="gallery-img">
+    </div>
+    <div class="column" style="margin-top: 1rem;">
+      <h2>Proximity</h2>
+      <p>The second usability study showed that users filled out information more quickly when the guest’s personal
+        information was grouped together while the reservation information followed after.</p>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <div class="column">
+      <img src="assets/images/bookd_mockup3.png" class="gallery-img">
+    </div>
+    <div class="column" style="margin-top: 1rem;">
+      <h2>Aesthetics</h2>
+      <p>The second usability study revealed that users responded better and had more positive first impressions with a
+        more streamlined color palette. The darker call-to-action buttons also made it easier for some users to read
+        text.</p>
+    </div>
+  </div>
+  <hr class="rounded">
+
+    <!--Usability Findings-->
+    <section class="intro" id="intro">
+      <h1>Styling</h1>
+      <p>Two rounds of usability studies were conducted – one moderated and one unmoderated. Findings from the first study
+        helped uncover major pain points with the initial design. The second study used a high-fidelity prototype and
+        revealed what elements still needed refinement.</p>
+    </section>
+    <section class="detailed-content">
+      <h2>UI Kit</h2>
+      <img src="assets/images/Bookd UI Kit.png" class="feature-img"/>
+    </section>
+    <section class="detailed-content">
+      <h2>Typography</h2>
+      <img src="assets/images/bookd_typography.png"/>
+    </section>
+    <hr class="rounded">
+  <!--High-fidelity Protoype-->
+  <section class="intro" id="intro">
+    <h1>High-Fidelity Prototype</h1>
+    <p>The high-fidelity prototype showcases a more streamlined user flow with a more modern and less distracting
+      design. It prioritizes the user need for quick actions.</p>
+  </section>
+  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); align-items: center;" width="800" height="450"
+    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FAAQ02CXF4IE1f6XFC64Eny%2FRestaurant-Reservation-App%3Fnode-id%3D118%253A14%26scaling%3Dscale-down%26page-id%3D118%253A2%26starting-point-node-id%3D118%253A14"
+    allowfullscreen></iframe>
+  <hr class="rounded">
+
+  <!--Accessibility Considerations-->
+  <section class="intro" id="intro">
+    <h1>Accessibility Considerations</h1>
+    <p>In order to better understand the users and their needs, I conducted interviews and created empathy maps. A
+      primary user group identified during the research was busy restaurant hosts who had more than one role on the
+      staff. This user group confirmed some initial assumptions about restaurant hosts, but further research revealed
+      that time constraints were only part of the causes for finding difficulty with bookkeeping. Other challenges
+      included inconsistency and legibility.</p>
+  </section>
+  <section class="topic" id="topic">
+    <div class="topics-container">
+      <!--First Card-->
+      <div class="topic-container topic-card">
+        <h3 class="topic-title">Dark Mode & Language Support</h3>
+        <p class="topic-details">
+          Added a settings page so that users could change from light to dark mode or change the language used
+          throughout the app.
+        </p>
+      </div>
+      <!--Second Card-->
+      <div class="topic-container topic-card">
+        <h3 class="topic-title">Contrast</h3>
+        <p class="topic-details">
+          Changed the color palette and included higher contrasting colors to help users with reading difficulties or
+          visual impairments.
+        </p>
+      </div>
+      <!--Third Card-->
+      <div class="topic-container topic-card">
+        <h3 class="topic-title">Iconography</h3>
+        <p class="topic-details">
+          Used icons to help make navigation and comprehensibility world-wide easier.
+        </p>
+      </div>
+    </div>
+  </section>
+  <hr class="rounded">
+
+  <!--Conclusion-->
+  <section class="intro" id="intro">
+    <h1>Takeaways & Next Steps</h1>
+  </section>
+  <div class="gallery">
+    <div class="column">
+      <h2>Impact</h2>
+      <p>The app alleviates the stress and time constraints faced by restaurant employees so that they can focus on
+        prioritizing the guest and the guest’s dining experience.</p>
+    </div>
+    <div class="column">
+      <h2>Lessons Learned</h2>
+      <p>As I was designing this app, I learned that my interpretation of what a good and useful design is does not
+        necessarily mean that it is the best design for what users need. The end-users’ perceptions are ultimately the
+        most reliable deciding factors for app design.</p>
+    </div>
+  </div>
+  <img src="assets/images/nextSteps.png" class="content" />
+
+  <!--Navigation Buttons-->
+  <div class="projectNav">
+    <a href="portfolio.html" class="secondary-button"><i class="fa fa-chevron-left"></i> Previous project</a>
+    <a href="ube-sugar.html" class="secondary-button">Next Project <i class="fa fa-chevron-right"></i> </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="socials">
+      <i class="fa fa-linkedin fa-lg"></i>
+      <i class="fa fa-github fa-lg"></i>
+      <i class="fa fa-envelope fa-lg"></i>
+    </div>
+    <p class="copy">&copy; Copyright 2022</p>
+    <p class="copy">Designed and developed by Danielle Dacanay</a>
+    </p>
+  </footer>
+
+  <!-- Website scripts -->
+  <script src="assets/js/app.js"></script>
+
+  <!-- Ion icons scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

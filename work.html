@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <!--CSS Styles -->
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Favicons -->
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="assets/icons/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="assets/icons/favicon-32x32.png"
+        />
+    
+        <!-- Animate CSS CDN -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <title>Danielle Dacanay | Portfolio</title>
+      </head>
+    
+      <body>
+<!-- Navbar -->
+        <nav>
+            <a href="index.html"><img src="assets/images/dd_logo.png" alt="logo" width="125" height="100"></a>
+            <ul class="navigation">
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="contact-me.html" target="_blank" class="nav-link">Contact</a></li>
+            </ul>
+            <!--Burger menu will be hidden on desktop but shown on mobile-->
+            <button class="burger-menu" id="burger-menu">
+                <ion-icon class="bars" name="menu-outline"></ion-icon>
+            </button>
+        </nav>
+
+<!--Portfolio-->
+<!--Portfolio Header-->
+<section class="portfolio-header">
+    <h1>PORTFOLIO</h1>
+    <div class="filter-menu" id="filter">
+        <button class="btn active" onclick="filterProjects('all')"> All </button>
+        <button class="btn" onclick="filterProjects('design')"> Design </button>
+        <button class="btn" onclick="filterProjects('development')"> Development </button>
+    </div>
+</section>
+<!--Portfolio Grid-->
+<div class="portfolio-container">
+  <!--Book'd App-->
+    <div class="filterDiv design">
+        <img src="assets/images/bookd_thumbnail.png" alt="Book'd App" class="portfolio-img"/>
+          <div class="overlay">
+            <a href="bookd-app.html">
+              <span class="link"></span>
+            <h2>Book'd</h2>
+            <br>
+            <p>Reservation tracking made easy and convenient so your employees can focus on the guests
+            </p>
+            </a>
+          </div>
+    </div>
+  <!--Ube & Sugar Bakery-->
+    <div class="filterDiv design">
+        <img src="assets/images/ubeBakery_thumbnail.png" alt="Ube & Sugar Bakery" class="portfolio-img"/>
+        <div class="overlay">
+          <a href="ube-sugar.html">
+            <span class="link"></span>
+          <h2>Ube & Sugar Bakery</h2>
+          <br>
+          <p>A responsive website that streamlines the browsing, ordering and checkout process for customers 
+          </p>
+          </a>
+        </div>
+    </div>
+  <!--Money Sense-->
+    <div class="filterDiv design">
+        <img src="assets/images/moneySense_thumbnail.png" alt="Money Sense App" class="portfolio-img"/>
+        <div class="overlay">
+          <a href="money-sense.html">
+            <span class="link"></span>
+          <h2>Money Sense</h2>
+          <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          </p>
+        </a>
+      </div>
+    </div>
+
+  <!--Online Portfolio-->
+  <!-- <a href="my-portfolio.html"> -->
+    <div class="filterDiv development">
+        <img src="assets/images/portfolio_thumbnail.png" alt="Online Portfolio" class="portfolio-img"/>
+        <div class="overlay">
+          <a href="portfolio.html">
+            <span class="link"></span>
+          <h2>Online Portfolio</h2>
+          <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          </p>
+        </a>
+        </div>
+    </div>
+</div>
+
+<!--JS-->
+<script>
+    filterProjects("all")
+    function filterProjects(selection) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (selection == "all") selection = "";
+      for (i = 0; i < x.length; i++) {
+        removeProject(x[i], "show");
+        if (x[i].className.indexOf(selection) > -1) addProject(x[i], "show");
+      }
+    }
+    
+    function addProject(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function removeProject(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("filter");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+
+
+    <!-- Footer section -->
+    <footer>
+      <div class="socials">
+        <i class="fa fa-linkedin fa-lg"></i>
+        <i class="fa fa-github fa-lg"></i>
+        <i class="fa fa-envelope fa-lg"></i>
+      </div>
+      <p class="copy">&copy; Copyright 2022</p>
+      <p class="copy">Designed and developed by Danielle Dacanay</a>
+      </p>
+</footer>
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
