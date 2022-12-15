@@ -294,8 +294,6 @@ nav ul li {
 .filter-menu {
   display: flex;
   justify-content: space-evenly;
-  border-style: solid;
-  border-color: var(--secondary-color);
   border-radius: 15px;
   border-width: 2px;
   max-width: 20%;
