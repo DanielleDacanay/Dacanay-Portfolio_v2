@@ -151,7 +151,8 @@ nav ul li {
     font-weight: var(--bold-font);
 }
 
-.burger-menu {
+@media (min-width: 1028px) {
+  .burger-menu {
     color: var(--primary-color);
     font-size: 2rem;
     border: 0;
@@ -159,6 +160,8 @@ nav ul li {
     cursor: pointer;
     display: none;
   }
+}
+
 
 /* Hero Section */
 .hero {
